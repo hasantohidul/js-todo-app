@@ -15,16 +15,19 @@
     </header>
 
     <main>
-        <!-- Input field for adding a new task -->
+        <!-- Form section to add new task -->
         <section id="new-task-section">
-            <input type="text" id="new-task" placeholder="Enter a new task" />
-            <button id="add-task-button">Add Task</button>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Enter a new task" />
+                <button type="submit">Add Task</button>
+            </form>
+
         </section>
 
         <!-- Section to display new tasks -->
-         <section id="task-list-section">
+        <section id="task-list-section">
             <ul id="task-list"></ul>
-         </section>
+        </section>
 
     </main>
     <script src="js/app.js"></script>
