@@ -26,6 +26,9 @@ todoForm.addEventListener("submit", (e) => {
   if (!taskTitle) {
     alert("Please, enter a task!");
     return;
+  } else if (tasks.some(task => task.title === taskTitle)) {
+    alert("Task already exists!")
+    return;
   }
 
   const newTask = {
