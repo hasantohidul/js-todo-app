@@ -5,12 +5,18 @@ const todoList = document.getElementById("todo-list");
 let tasks = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  const storedTasks = localStorage.getItem("tasks");
+  try {
+    const storedTasks = localStorage.getItem("tasks");
 
   if (storedTasks) {
     tasks = JSON.parse(storedTasks);
     renderTasks();
   }
+  } catch (error) {
+    console.log("Error parsing tasks from localStorage:", error);
+    tasks = [];
+  }
+  
 });
 
 todoForm.addEventListener("submit", (e) => {
