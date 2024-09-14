@@ -1,4 +1,4 @@
-# To-Do List Application
+# To-Do App
 
 This repository contains a simple To-Do application built using HTML, CSS, and JavaScript. The app allows users to add, view, and manage tasks in a clean and responsive interface.
 
